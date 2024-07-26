@@ -38,7 +38,7 @@ git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
 ```
 
-Instale as dependências do Composer:
+* Instale as dependências do Composer:
 
 ```
 composer install
@@ -61,33 +61,20 @@ DB_USERNAME=seu_usuario
 DB_PASSWORD=sua_senha
 ```
 
-Gere a chave da aplicação:
+* Gere a chave da aplicação:
 
 ``` 
 php artisan key:generate
 ```
 
-Execute as migrações para criar as tabelas no banco de dados:
+* Execute as migrações para criar as tabelas no banco de dados:
 
 ```
 php artisan migrate
 ```
 
-(Opcional) Popule a tabela de países com dados de exemplo:
+* Inicie o servidor de desenvolvimento:
 
-sh
-
-php artisan db:seed --class=CountrySeeder
-
-Inicie o servidor de desenvolvimento:
-
-sh
-
+```
 php artisan serve
-
-* How to run the program
-* Step-by-step bullets
 ```
-code blocks for commands
-```
-
